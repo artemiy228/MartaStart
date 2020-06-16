@@ -1,0 +1,70 @@
+.header {
+	background: url("../images/header-bg.jpg")center center / cover no-repeat;
+	min-height: 790px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+
+		&__list {
+			display: flex;
+
+			li {
+				margin-right: 50px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				.link__item {
+					text-decoration: none;
+					color: #fff;
+					font-family: 'Source Sans Pro', sans-serif;
+					text-transform: uppercase;
+					font-weight: 600;
+					font-size: 15px;
+					opacity: 0.5;
+					transition: all 50ms linear;
+
+					&-active,
+					&:hover {
+						opacity: 1;
+					}
+
+				}
+			}
+
+		}
+	}
+
+	&__login {
+		margin-right: 44px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 600;
+		font-size: 15px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__sign-up {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		color: #250F8A;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 10px 43px;
+		border: 1px solid #fff;
+		background-color: #fff;
+		border-radius: 20px;
+	}
+}

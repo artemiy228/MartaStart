@@ -1,0 +1,19 @@
+.footer {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 61px;
+		padding: 0 40px;
+	}
+
+	&__link {
+		a {
+			color: #272727;
+			text-decoration: none;
+		}
+		& a + a {
+			margin-left: 20px;
+		}
+	}
+}
